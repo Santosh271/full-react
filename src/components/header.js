@@ -26,9 +26,15 @@ export default function header(props) {
   )
 }
 
+//adding a default props for title
+ 
+// header.defaultProps ={
+//   title: "Default title"
+// }
+
 
 // Strict checking that title must be string
 
-header.PropType = {
-  title: PropType.string
-}
+header.propType = {
+  title: PropType.string.isRequired
+}  
